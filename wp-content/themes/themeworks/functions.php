@@ -1,4 +1,8 @@
 <?php
+//ADMIN
+ include( dirname( __FILE__ ) . '/admin/admin-init.php' );
+
+
 //Add theme supports
 add_theme_support('post-formats');
 add_theme_support('post-thumbnails');

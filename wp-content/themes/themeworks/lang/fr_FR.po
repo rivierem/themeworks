@@ -1,17 +1,1768 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Teemo Theme\n"
-"POT-Creation-Date: 2012-09-11 08:54-0500\n"
-"PO-Revision-Date: 2012-09-11 09:00-0500\n"
-"Last-Translator: Jonathan Lafleur <jonathan@lewebsimple.ca>\n"
-"Language-Team: Team Teemo <math@lewebsimple.ca>\n"
+"Project-Id-Version: Themeworks\n"
+"POT-Creation-Date: 2014-07-23 12:37+0400\n"
+"PO-Revision-Date: 2014-07-23 12:37+0400\n"
+"Last-Translator: \n"
+"Language-Team: Themeworks <info@mathieuriviere.com>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _;__;_e;_n\n"
-"X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: CANADA\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _;__;_e;_x\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
+#: ../admin/options-init.php:112
+#: ../admin/redux-framework/sample/sample-config.php:114
+msgid "Section via hook"
+msgstr ""
+
+#: ../admin/options-init.php:113
+#: ../admin/redux-framework/sample/sample-config.php:115
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../admin/options-init.php:191
+#: ../admin/redux-framework/sample/sample-config.php:193
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../admin/options-init.php:208
+#: ../admin/redux-framework/sample/sample-config.php:210
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: ../admin/options-init.php:209
+#: ../admin/redux-framework/sample/sample-config.php:211
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../admin/options-init.php:210
+#: ../admin/redux-framework/sample/sample-config.php:212
+msgid "Tags"
+msgstr ""
+
+#: ../admin/options-init.php:215
+#: ../admin/redux-framework/sample/sample-config.php:217
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: ../admin/options-init.php:215
+#: ../admin/redux-framework/sample/sample-config.php:217
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../admin/options-init.php:246
+#: ../admin/redux-framework/class.redux-plugin.php:410
+#: ../admin/redux-framework/sample/sample-config.php:1273
+#: ../admin/redux-framework/sample/sample-config.php:1498
+msgid "Documentation"
+msgstr ""
+
+#: ../admin/options-init.php:257
+#: ../admin/redux-framework/sample/barebones-config.php:82
+#: ../admin/redux-framework/sample/sample-config.php:1509
+msgid "Theme Information 1"
+msgstr ""
+
+#: ../admin/options-init.php:258 ../admin/options-init.php:264
+#: ../admin/redux-framework/sample/barebones-config.php:83
+#: ../admin/redux-framework/sample/barebones-config.php:89
+#: ../admin/redux-framework/sample/sample-config.php:1510
+#: ../admin/redux-framework/sample/sample-config.php:1516
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../admin/options-init.php:263
+#: ../admin/redux-framework/sample/barebones-config.php:88
+#: ../admin/redux-framework/sample/sample-config.php:1515
+msgid "Theme Information 2"
+msgstr ""
+
+#: ../admin/options-init.php:268
+#: ../admin/redux-framework/sample/barebones-config.php:93
+#: ../admin/redux-framework/sample/sample-config.php:1520
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:467
+#: ../admin/redux-framework/ReduxCore/framework.php:1738
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:468
+#: ../admin/redux-framework/ReduxCore/framework.php:1746
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:469
+#: ../admin/redux-framework/ReduxCore/framework.php:1762
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:502
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:503
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/extensions/customizer/extension_customizer.php:504
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:172
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:172
+msgid "Redux Framework"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:176
+#: ../admin/redux-framework/ReduxCore/framework.php:180
+msgid "Options"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:1196
+#: ../admin/redux-framework/ReduxCore/framework.php:1197
+#: ../admin/redux-framework/ReduxCore/framework.php:3340
+#: ../admin/redux-framework/ReduxCore/framework.php:3419
+msgid "System Info"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:1754
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:1769
+msgid "Please Wait"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:1915
+msgid "Hints"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:1916
+msgid "<p>"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:2040
+msgid "Default"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3092
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3166
+msgid "Expand"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3168
+#: ../admin/redux-framework/ReduxCore/framework.php:3476
+msgid "Save Changes"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3172
+#: ../admin/redux-framework/ReduxCore/framework.php:3480
+msgid "Reset Section"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3174
+#: ../admin/redux-framework/ReduxCore/framework.php:3482
+msgid "Reset All"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3179
+#: ../admin/redux-framework/ReduxCore/framework.php:3487
+msgid "Working..."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3199
+msgid "Settings Imported!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3214
+msgid "All Defaults Restored!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3228
+msgid "Section Defaults Restored!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3242
+msgid "Settings Saved!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3260
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3268
+msgid "error(s) were found!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/framework.php:3276
+msgid "warning(s) were found!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/class.redux_functions.php:252
+msgid "Dismiss"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/debug.php:41
+#: ../admin/redux-framework/ReduxCore/inc/debug.php:69
+#: ../admin/redux-framework/ReduxCore/inc/debug.php:76
+#: ../admin/redux-framework/ReduxCore/inc/debug.php:77
+msgid "Options Object"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/debug.php:54
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:124
+#: ../admin/redux-framework/ReduxCore/inc/fields/color/field_color.php:72
+#: ../admin/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:79
+#: ../admin/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../admin/redux-framework/ReduxCore/inc/fields/color_rgba/field_color_rgba.php:77
+msgid "Transparent"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:141
+msgid "Background Repeat"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:157
+msgid "Background Clip"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:173
+msgid "Background Origin"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:188
+msgid "Background Size"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:203
+msgid "Background Attachment"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:223
+msgid "Background Position"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:277
+#: ../admin/redux-framework/ReduxCore/inc/fields/media/field_media.php:112
+msgid "No media selected"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:314
+#: ../admin/redux-framework/ReduxCore/inc/fields/media/field_media.php:154
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:126
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:188
+msgid "Upload"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/background/field_background.php:321
+#: ../admin/redux-framework/ReduxCore/inc/fields/media/field_media.php:161
+#: ../admin/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text.php:68
+#: ../admin/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text.php:72
+#: ../admin/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text.php:75
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:133
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:190
+msgid "Remove"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:114
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:191
+msgid "All"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:127
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:215
+msgid "Top"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:134
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:222
+msgid "Right"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:141
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:229
+msgid "Bottom"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:148
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:236
+msgid "Left"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/border/field_border.php:162
+msgid "Border style"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:68
+msgid "From "
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:82
+msgid "To "
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/dimensions/field_dimensions.php:161
+msgid "Width"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/dimensions/field_dimensions.php:177
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:449
+msgid "Height"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/dimensions/field_dimensions.php:188
+#: ../admin/redux-framework/ReduxCore/inc/fields/dimensions/field_dimensions.php:189
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:245
+#: ../admin/redux-framework/ReduxCore/inc/fields/spacing/field_spacing.php:246
+msgid "Units"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/gallery/field_gallery.php:73
+#: ../admin/redux-framework/sample/sample-config.php:313
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/gallery/field_gallery.php:74
+msgid "Clear Gallery"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/link_color/field_link_color.php:87
+msgid "Regular"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/link_color/field_link_color.php:91
+msgid "Hover"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/link_color/field_link_color.php:95
+msgid "Visited"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/link_color/field_link_color.php:99
+msgid "Active"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/multi_text/field_multi_text.php:60
+msgid "Add More"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/password/field_password.php:62
+msgid "Password"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/password/field_password.php:63
+msgid "Username"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/select/field_select.php:82
+#: ../admin/redux-framework/ReduxCore/inc/fields/select_image/field_select_image.php:62
+msgid "Select an item"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/select/field_select.php:126
+#: ../admin/redux-framework/ReduxCore/inc/fields/select_image/field_select_image.php:143
+msgid "No items of this type were found."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:68
+msgid "Slide"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:73
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:145
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:200
+msgid "Title"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:149
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:204
+msgid "Description"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:153
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:207
+msgid "URL"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:167
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:220
+#, php-format
+msgid "Delete %s"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/slides/field_slides.php:223
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/switch/field_switch.php:42
+msgid "On"
+msgstr "On"
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/switch/field_switch.php:49
+msgid "Off"
+msgstr "Off"
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:250
+msgid "Font Family"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:251
+msgid "Font family"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:277
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:278
+msgid "Backup Font Family"
+msgstr "Safe Web Font"
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:292
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:299
+msgid "Font style"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:293
+msgid "Font Weight &amp; Style"
+msgstr "Graisse et Style de la police d'écriture"
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:299
+msgid "Style"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:329
+msgid "Font subsets"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:331
+msgid "Font Subsets"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:332
+msgid "Subsets"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:332
+msgid "Font script"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:349
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:350
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:351
+msgid "Text Align"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:372
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:373
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:374
+msgid "Text Transform"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:395
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:396
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:397
+msgid "Font Variant"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:415
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:416
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:417
+msgid "Text Decoration"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:439
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:440
+msgid "Font Size"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:440
+msgid "Size"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:448
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:449
+msgid "Line Height"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:457
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:458
+msgid "Word Spacing"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:466
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:467
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:485
+msgid "Font Color"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:487
+msgid "Font color"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:810
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/fields/typography/field_typography.php:921
+msgid "Google Webfonts"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:78
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:81
+msgid "Import Options"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:82
+msgid "Import from file"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:82
+msgid "Import from URL"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:85
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:90
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:94
+msgid "Import"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:94
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:97
+msgid "Export Options"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:100
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:104
+msgid "Copy"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:104
+msgid "Download"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:104
+msgid "Copy Link"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:140
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:149
+#: ../admin/redux-framework/ReduxCore/inc/import_export.php:150
+#: ../admin/redux-framework/sample/sample-config.php:1464
+msgid "Import / Export"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:130
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:131
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test to ensure "
+"compatability."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:136
+msgid "Allow tracking"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:141
+msgid "Do not allow tracking"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:152
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:153
+msgid "Getting Started"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:153
+#, php-format
+msgid ""
+"This panel demonstrates the many features of Redux.  Before digging in, we "
+"suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:153
+msgid "our documentation"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:154
+msgid "Redux Generator"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:154
+#, php-format
+msgid ""
+"Want to get a head start? Use the %1$s. It will create a customized "
+"boilerplate theme or a standalone admin folder complete with all things "
+"Redux (with the help of Underscores and TGM). Save yourself a headache and "
+"try it today."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:155
+msgid "Redux Extensions"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:155
+#, php-format
+msgid ""
+"Did you know we have extensions, which greatly enhance the features of "
+"Redux?  Visit our %1$s to learn more!"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:155
+msgid "extensions directory"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:156
+msgid "Like Redux?"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:156
+#, php-format
+msgid ""
+"If so, please %1$s and consider making a %2$s to keep development of Redux "
+"moving forward."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:156
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:156
+msgid "donation"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:157
+msgid "Newsletter"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:157
+msgid ""
+"If you'd like to keep up to with all things Redux, please subscribe to our "
+"newsletter"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:158
+msgid "Email address"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:158
+msgid "Subscribe"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/tracking.php:167
+msgid "Close"
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/color/validation_color.php:15
+#: ../admin/redux-framework/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:14
+#: ../admin/redux-framework/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:16
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:16
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/date/validation_date.php:16
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/email/validation_email.php:16
+#: ../admin/redux-framework/ReduxCore/inc/validation/email_not_empty/validation_email_not_empty.php:16
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:16
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/not_empty/validation_not_empty.php:16
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/numeric/validation_numeric.php:16
+#: ../admin/redux-framework/ReduxCore/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../admin/redux-framework/ReduxCore/inc/validation/url/validation_url.php:16
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:306
+msgid "Redux Framework has an embedded demo."
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:306
+msgid "Click here to activate the sample config file."
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:407
+msgid "Repo"
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:408
+msgid "Generator"
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:409
+msgid "Issues"
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:415
+msgid "Deactivate Demo Mode"
+msgstr ""
+
+#: ../admin/redux-framework/class.redux-plugin.php:417
+msgid "Activate Demo Mode"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:54
+#: ../admin/redux-framework/sample/sample-config.php:240
+msgid "Home Settings"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:55
+#: ../admin/redux-framework/sample/sample-config.php:241
+msgid ""
+"Redux Framework was created with the developer in mind. It allows for any "
+"theme developer to have an advanced theme panel with most of the features a "
+"developer would need. For more information check out the Github repo at: <a "
+"href=\"https://github.com/ReduxFramework/Redux-Framework\">https://github."
+"com/ReduxFramework/Redux-Framework</a>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:63
+#: ../admin/redux-framework/sample/sample-config.php:249
+msgid "Web Fonts"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:66
+#: ../admin/redux-framework/sample/sample-config.php:252
+#: ../admin/redux-framework/sample/sample-config.php:281
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:67
+#: ../admin/redux-framework/sample/sample-config.php:253
+#: ../admin/redux-framework/sample/sample-config.php:282
+#: ../admin/redux-framework/sample/sample-config.php:300
+#: ../admin/redux-framework/sample/sample-config.php:308
+msgid "Upload any media using the WordPress native uploader"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:113
+#: ../admin/redux-framework/sample/barebones-config.php:114
+#: ../admin/redux-framework/sample/sample-config.php:1540
+#: ../admin/redux-framework/sample/sample-config.php:1541
+msgid "Sample Options"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:211
+#: ../admin/redux-framework/sample/sample-config.php:1640
+#, php-format
+msgid ""
+"<p>Did you know that Redux sets a global variable for you? To access any of "
+"your saved options from within your code you can use your global variable: "
+"<strong>$%1$s</strong></p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:213
+#: ../admin/redux-framework/sample/sample-config.php:1642
+msgid ""
+"<p>This text is displayed above the options panel. It isn't required, but "
+"more info is always better! The intro_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/barebones-config.php:217
+#: ../admin/redux-framework/sample/sample-config.php:1646
+msgid ""
+"<p>This text is displayed below the options panel. It isn't required, but "
+"more info is always better! The footer_text field accepts all HTML.</p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:262
+msgid "Section Show"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:263
+#: ../admin/redux-framework/sample/sample-config.php:270
+msgid "With the \"section\" field you can create indent option sections."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:269
+msgid "Media Options"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:278
+msgid "Media w/ URL"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:298
+msgid "Media w/o URL"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:299
+#: ../admin/redux-framework/sample/sample-config.php:307
+msgid ""
+"This represents the minimalistic view. It does not have the preview box or "
+"the display URL in an input box. "
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:306
+msgid "Media No Preview"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:314
+msgid ""
+"Create a new Gallery by selecting existing or uploading new images using the "
+"WordPress native uploader"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:315
+#: ../admin/redux-framework/sample/sample-config.php:668
+#: ../admin/redux-framework/sample/sample-config.php:679
+#: ../admin/redux-framework/sample/sample-config.php:696
+#: ../admin/redux-framework/sample/sample-config.php:791
+#: ../admin/redux-framework/sample/sample-config.php:805
+#: ../admin/redux-framework/sample/sample-config.php:814
+#: ../admin/redux-framework/sample/sample-config.php:821
+#: ../admin/redux-framework/sample/sample-config.php:834
+#: ../admin/redux-framework/sample/sample-config.php:843
+#: ../admin/redux-framework/sample/sample-config.php:852
+#: ../admin/redux-framework/sample/sample-config.php:874
+#: ../admin/redux-framework/sample/sample-config.php:887
+#: ../admin/redux-framework/sample/sample-config.php:896
+#: ../admin/redux-framework/sample/sample-config.php:905
+#: ../admin/redux-framework/sample/sample-config.php:914
+#: ../admin/redux-framework/sample/sample-config.php:924
+#: ../admin/redux-framework/sample/sample-config.php:940
+#: ../admin/redux-framework/sample/sample-config.php:948
+#: ../admin/redux-framework/sample/sample-config.php:969
+#: ../admin/redux-framework/sample/sample-config.php:977
+#: ../admin/redux-framework/sample/sample-config.php:985
+#: ../admin/redux-framework/sample/sample-config.php:1000
+#: ../admin/redux-framework/sample/sample-config.php:1008
+#: ../admin/redux-framework/sample/sample-config.php:1042
+#: ../admin/redux-framework/sample/sample-config.php:1055
+#: ../admin/redux-framework/sample/sample-config.php:1075
+#: ../admin/redux-framework/sample/sample-config.php:1091
+#: ../admin/redux-framework/sample/sample-config.php:1125
+#: ../admin/redux-framework/sample/sample-config.php:1134
+#: ../admin/redux-framework/sample/sample-config.php:1142
+#: ../admin/redux-framework/sample/sample-config.php:1151
+#: ../admin/redux-framework/sample/sample-config.php:1159
+#: ../admin/redux-framework/sample/sample-config.php:1168
+#: ../admin/redux-framework/sample/sample-config.php:1176
+#: ../admin/redux-framework/sample/sample-config.php:1185
+#: ../admin/redux-framework/sample/sample-config.php:1193
+#: ../admin/redux-framework/sample/sample-config.php:1202
+#: ../admin/redux-framework/sample/sample-config.php:1212
+#: ../admin/redux-framework/sample/sample-config.php:1220
+#: ../admin/redux-framework/sample/sample-config.php:1229
+#: ../admin/redux-framework/sample/sample-config.php:1237
+#: ../admin/redux-framework/sample/sample-config.php:1246
+#: ../admin/redux-framework/sample/sample-config.php:1296
+#: ../admin/redux-framework/sample/sample-config.php:1307
+#: ../admin/redux-framework/sample/sample-config.php:1322
+msgid "This is the description field, again good for additional info."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:320
+msgid "Slider Example 1"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:321
+msgid "This slider displays the value as a label."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:322
+msgid "Slider description. Min: 1, max: 500, step: 1, default value: 250"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:332
+msgid "Slider Example 2 with Steps (5)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:333
+msgid "This example displays the value in a text box"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:334
+msgid "Slider description. Min: 0, max: 300, step: 5, default value: 75"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:344
+msgid "Slider Example 3 with two sliders"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:345
+msgid "This example displays the values in select boxes"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:346
+msgid ""
+"Slider description. Min: 0, max: 500, step: 5, slider 1 default value: 100, "
+"slider 2 default value: 300"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:360
+msgid "Slider Example 4 with float values"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:361
+msgid "This example displays float values"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:362
+msgid "Slider description. Min: 0, max: 1, step: .1, default value: .5"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:373
+msgid "JQuery UI Spinner Example 1"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:374
+msgid ""
+"JQuery UI spinner description. Min:20, max: 100, step:20, default value: 40"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:383
+msgid "Switch On"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:384
+#: ../admin/redux-framework/sample/sample-config.php:391
+msgid "Look, it's on!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:390
+msgid "Switch Off"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:398
+msgid "Switch - Nested Children, Enable to show"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:399
+msgid "Look, it's on! Also hidden child elements!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:408
+msgid "Switch - This and the next switch required for patterns to show"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:409
+#: ../admin/redux-framework/sample/sample-config.php:418
+msgid "Also called a \"fold\" parent."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:410
+#: ../admin/redux-framework/sample/sample-config.php:419
+msgid ""
+"Items set with a fold to this ID will hide unless this is set to the "
+"appropriate value."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:417
+msgid "Switch2 - Enable the above switch and this one for patterns to show"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:430
+msgid "Images Option (with pattern=>true)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:431
+msgid "Select a background pattern."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:480
+msgid "Slides Options"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:481
+msgid "Unlimited slides with drag and drop sortings."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:482
+msgid ""
+"This field will store all slides values into a multidimensional array to use "
+"into a foreach loop."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:484
+msgid "This is a title"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:485
+msgid "Description Here"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:486
+msgid "Give us a link!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:493
+msgid "Preset"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:494
+#: ../admin/redux-framework/sample/sample-config.php:496
+msgid ""
+"This allows you to set a json string or array to override multiple "
+"preferences in your theme."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:505
+msgid "Typography"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:521
+msgid "Typography option with each property can be called individually."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:539
+msgid "General Settings"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:545
+msgid "Main Layout"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:546
+msgid ""
+"Select main content and sidebar alignment. Choose between 1, 2 or 3 column "
+"layout."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:561
+msgid "Tracking Code"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:562
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the footer template of your theme."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:569
+msgid "CSS Code"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:570
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:601
+msgid "Footer Text"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:602
+msgid ""
+"You can use the following shortcodes in your footer text: [wp-url] [site-"
+"url] [theme-url] [login-url] [logout-url] [site-title] [site-tagline] "
+"[current-year]"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:617
+msgid "Styling Options"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:623
+msgid "Theme Stylesheet"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:624
+msgid "Select your themes alternative color scheme."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:632
+msgid "Body Background Color"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:633
+msgid "Pick a background color for the theme (default: #fff)."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:641
+msgid "Body Background"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:642
+msgid "Body background with image, color, etc."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:648
+msgid "Footer Background Color"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:649
+msgid "Pick a background color for the footer (default: #dd9933)."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:656
+msgid "Color RGBA - BETA"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:657
+msgid ""
+"Gives you the RGBA color. Still quite experimental. Use at your own risk."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:666
+msgid "Header Gradient Color Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:667
+#: ../admin/redux-framework/sample/sample-config.php:678
+#: ../admin/redux-framework/sample/sample-config.php:694
+msgid "Only color validation can be done on this field type"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:677
+msgid "Links Color Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:693
+msgid "Header Border Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:719
+msgid "Padding/Margin Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:720
+msgid "Allow your users to choose the spacing or margin they want."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:721
+msgid ""
+"You can enable or disable any piece of this field. Top, Right, Bottom, Left, "
+"or Units."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:734
+msgid "Dimensions (Width/Height) Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:735
+msgid "Allow your users to choose width, height, and/or unit."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:736
+msgid ""
+"You can enable or disable any piece of this field. Width, Height, or Units."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:745
+msgid "Body Font"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:746
+msgid "Specify the body font properties."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:758
+msgid "Custom CSS"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:759
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:760
+msgid "This field is even CSS validated!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:766
+msgid "Custom HTML"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:767
+msgid "Just like a text box widget."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:768
+msgid "This field is even HTML validated!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:782
+msgid "Field Validation"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:783
+msgid "Validate ALL fields within Redux."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:784
+msgid ""
+"<p class=\"description\">This is the Description. Again HTML is allowed2</p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:789
+msgid "Text Option - Email Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:790
+msgid ""
+"This is a little space under the Field Title in the Options table, "
+"additional info is good in here."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:803
+msgid "Text Option with Data Attributes"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:804
+msgid ""
+"You can also pass an options array if you want. Set the default to whatever "
+"you like."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:811
+msgid "Multi Text Option - Color Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:813
+msgid ""
+"If you enter an invalid color it will be removed. Try using the text \"blue"
+"\" as a color.  ;)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:819
+msgid "Text Option - URL Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:820
+msgid "This must be a URL."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:832
+msgid "Text Option - Numeric Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:833
+msgid "This must be numeric."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:841
+msgid "Text Option - Comma Numeric Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:842
+msgid "This must be a comma separated string of numerical values."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:850
+msgid "Text Option - No Special Chars Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:851
+msgid "This must be a alpha numeric only."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:859
+msgid "Text Option - Str Replace Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:860
+#: ../admin/redux-framework/sample/sample-config.php:873
+#: ../admin/redux-framework/sample/sample-config.php:886
+msgid "You decide."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:861
+msgid "This field's default value was changed by a filter hook!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:872
+msgid "Text Option - Preg Replace Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:885
+msgid "Text Option - Custom Callback Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:894
+msgid "Textarea Option - No HTML Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:895
+msgid "All HTML will be stripped"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:903
+msgid "Textarea Option - HTML Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:904
+msgid "HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:912
+msgid "Textarea Option - HTML Validated Custom"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:913
+msgid "Custom HTML Allowed (wp_kses)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:922
+msgid "Textarea Option - JS Validated"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:923
+msgid "JS will be escaped"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:932
+msgid "Radio/Checkbox Fields"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:933
+#: ../admin/redux-framework/sample/sample-config.php:1068
+#: ../admin/redux-framework/sample/sample-config.php:1289
+#: ../admin/redux-framework/sample/sample-config.php:1485
+msgid ""
+"<p class=\"description\">This is the Description. Again HTML is allowed</p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:938
+msgid "Checkbox Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:939
+#: ../admin/redux-framework/sample/sample-config.php:947
+#: ../admin/redux-framework/sample/sample-config.php:968
+#: ../admin/redux-framework/sample/sample-config.php:976
+#: ../admin/redux-framework/sample/sample-config.php:984
+#: ../admin/redux-framework/sample/sample-config.php:999
+#: ../admin/redux-framework/sample/sample-config.php:1007
+#: ../admin/redux-framework/sample/sample-config.php:1023
+#: ../admin/redux-framework/sample/sample-config.php:1074
+#: ../admin/redux-framework/sample/sample-config.php:1090
+#: ../admin/redux-framework/sample/sample-config.php:1124
+#: ../admin/redux-framework/sample/sample-config.php:1133
+#: ../admin/redux-framework/sample/sample-config.php:1141
+#: ../admin/redux-framework/sample/sample-config.php:1150
+#: ../admin/redux-framework/sample/sample-config.php:1158
+#: ../admin/redux-framework/sample/sample-config.php:1167
+#: ../admin/redux-framework/sample/sample-config.php:1175
+#: ../admin/redux-framework/sample/sample-config.php:1184
+#: ../admin/redux-framework/sample/sample-config.php:1192
+#: ../admin/redux-framework/sample/sample-config.php:1201
+#: ../admin/redux-framework/sample/sample-config.php:1219
+#: ../admin/redux-framework/sample/sample-config.php:1228
+#: ../admin/redux-framework/sample/sample-config.php:1236
+#: ../admin/redux-framework/sample/sample-config.php:1245
+#: ../admin/redux-framework/sample/sample-config.php:1253
+#: ../admin/redux-framework/sample/sample-config.php:1295
+#: ../admin/redux-framework/sample/sample-config.php:1306
+#: ../admin/redux-framework/sample/sample-config.php:1321
+msgid "No validation can be done on this field type"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:946
+msgid "Multi Checkbox Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:967
+#: ../admin/redux-framework/sample/sample-config.php:998
+msgid "Multi Checkbox Option (with menu data)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:975
+msgid "Multi Checkbox Option (with sidebar data)"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:983
+msgid "Radio Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1006
+msgid "Images Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1022
+msgid "Images Option for Layout"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1024
+msgid ""
+"This uses some of the built in images, you can use them for layout options."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1040
+#: ../admin/redux-framework/sample/sample-config.php:1053
+msgid "Sortable Text Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1041
+#: ../admin/redux-framework/sample/sample-config.php:1054
+msgid "Define and reorder these however you want."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1067
+msgid "Select Fields"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1073
+msgid "Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1089
+msgid "Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1105
+msgid "Select Image"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1106
+msgid "A preview of the selected image will appear underneath the select box."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1117
+msgid "You can easily add a variety of data from WordPress."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1123
+msgid "Categories Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1132
+msgid "Categories Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1140
+msgid "Pages Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1149
+msgid "Pages Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1157
+msgid "Tags Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1166
+msgid "Tags Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1174
+msgid "Menus Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1183
+msgid "Menus Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1191
+msgid "Post Type Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1200
+msgid "Post Type Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1210
+msgid "Post Type Multi Select Option + Sortable"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1211
+msgid "This field also has sortable enabled!"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1218
+msgid "Posts Select Option2"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1227
+msgid "Posts Multi Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1235
+msgid "User Role Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1244
+msgid "Capabilities Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1252
+msgid "Elusive Icons Select Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1254
+msgid "Here's a list of all the elusive icons by name and icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1260
+msgid "<strong>Theme URL:</strong> "
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1261
+msgid "<strong>Author:</strong> "
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1262
+msgid "<strong>Version:</strong> "
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1266
+msgid "<strong>Tags:</strong> "
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1288
+msgid "Additional Fields"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1294
+msgid "Date Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1305
+msgid "Button Set Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1320
+msgid "Button Set, Multi Select"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1336
+msgid "This is the info field, if you want to break sections up."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1342
+#: ../admin/redux-framework/sample/sample-config.php:1350
+#: ../admin/redux-framework/sample/sample-config.php:1358
+#: ../admin/redux-framework/sample/sample-config.php:1372
+#: ../admin/redux-framework/sample/sample-config.php:1380
+#: ../admin/redux-framework/sample/sample-config.php:1389
+#: ../admin/redux-framework/sample/sample-config.php:1398
+#: ../admin/redux-framework/sample/sample-config.php:1407
+msgid "This is a title."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1343
+msgid "This is an info field with the warning style applied and a header."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1351
+msgid ""
+"This is an info field with the success style applied, a header and an icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1359
+msgid ""
+"This is an info field with the critical style applied, a header and an icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1373
+msgid ""
+"This is an info notice field with the normal style applied, a header and an "
+"icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1381
+msgid ""
+"This is an info notice field with the info style applied, a header and an "
+"icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1390
+msgid ""
+"This is an info notice field with the warning style applied, a header and an "
+"icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1399
+msgid ""
+"This is an info notice field with the success style applied, a header and an "
+"icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1408
+msgid ""
+"This is an notice field with the critical style applied, a header and an "
+"icon."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1413
+msgid "Custom Field Callback"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1414
+msgid "This is a completely unique field type"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1415
+msgid ""
+"This is created with a callback function, so anything goes in this field. "
+"Make sure to define the function though."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1422
+#: ../admin/redux-framework/sample/sample-config.php:1447
+msgid "Customizer Only Option"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1423
+#: ../admin/redux-framework/sample/sample-config.php:1448
+msgid "The subtitle is NOT visible in customizer"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1424
+#: ../admin/redux-framework/sample/sample-config.php:1449
+msgid "The field desc is NOT visible in customizer."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1440
+msgid "Customizer Only"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1441
+msgid ""
+"<p class=\"description\">This Section should be visible only in Customizer</"
+"p>"
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1465
+msgid "Import and Export your Redux Framework settings from file, text or URL."
+msgstr ""
+
+#: ../admin/redux-framework/sample/sample-config.php:1484
+msgid "Theme Information"
+msgstr ""
+
+#: ../admin/themeworks.php:12
+msgid "Upload du Favicon"
+msgstr ""
+
+#: ../admin/themeworks.php:15
+msgid "32 x 32 pixels - Format PNG ou GIF"
+msgstr ""
+
+#: ../admin/themeworks.php:16
+msgid "Upload de votre favicon"
+msgstr ""
+
+#: ../admin/themeworks.php:21
+msgid "Google Analytics"
+msgstr ""
+
+#: ../admin/themeworks.php:24
+msgid "Code UA-xxxxxx"
+msgstr ""
+
+#: ../admin/themeworks.php:25
+msgid "Entrez votre de suivi Google Analytics"
+msgstr ""
+
+#: ../admin/themeworks.php:30
+msgid "Suivi avec Universal Analytics"
+msgstr ""
+
+#: ../admin/themeworks.php:33
+msgid ""
+"Activer les fonctionnalités de la <a href=\"https://support.google.com/"
+"analytics/answer/3450482\">Publicité Display</a>"
+msgstr ""
+
+#: ../admin/themeworks.php:46
+msgid "Options de l'entête"
+msgstr ""
+
+#: ../admin/themeworks.php:47 ../admin/themeworks.php:58
+msgid "Texte à venir"
+msgstr ""
+
+#: ../admin/themeworks.php:55
+msgid "Logo"
+msgstr ""
+
+#: ../admin/themeworks.php:59
+msgid "Upload de votre logo"
+msgstr ""
+
+#: ../footer.php:2
+msgid "All rights reserved"
+msgstr ""
+
+#: ../functions.php:89
+msgid "Green"
+msgstr ""

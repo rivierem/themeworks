@@ -50,17 +50,20 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
 
             // If Redux is running as a plugin, this will remove the demo notice and links
             add_action( 'redux/loaded', array( $this, 'remove_demo' ) );
-            
+
             // Function to test the compiler hook and demo CSS output.
             // Above 10 is a priority, but 2 in necessary to include the dynamically generated CSS to be sent to the function.
-            //add_filter('redux/options/'.$this->args['opt_name'].'/compiler', array( $this, 'compiler_action' ), 10, 2);
-            
+            // echo 'Hello';
+            add_filter('redux/options/'.$this->args['opt_name'].'/compiler', array( $this, 'compiler_action' ), 10, 2);
+            // echo 'World';
+            // add_filter('redux/options/'.$this->args['opt_name'].'/compiler', array( $this, 'compiler_action' ), 10, 3);
+
             // Change the arguments after they've been declared, but before the panel is created
             //add_filter('redux/options/'.$this->args['opt_name'].'/args', array( $this, 'change_arguments' ) );
-            
+
             // Change the default value of a field after it's been set, but before it's been useds
             //add_filter('redux/options/'.$this->args['opt_name'].'/defaults', array( $this,'change_defaults' ) );
-            
+
             // Dynamically add a section. Can be also used to modify sections/fields
             //add_filter('redux/options/' . $this->args['opt_name'] . '/sections', array($this, 'dynamic_section'));
 
@@ -74,13 +77,14 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
 
          * */
         function compiler_action($options, $css) {
-            //echo '<h1>The compiler hook has run!';
-            //print_r($options); //Option values
-            //print_r($css); // Compiler selector CSS values  compiler => array( CSS SELECTORS )
+            // echo '<h1>The compiler hook has run!';
+            // echo '<pre>';
+            // print_r($options); //Option values
+            // print_r($css); // Compiler selector CSS values  compiler => array( CSS SELECTORS )
+            // echo '</pre>';
 
-            /*
               // Demo of how to use the dynamic CSS and write your own static CSS file
-              $filename = dirname(__FILE__) . '/style' . '.css';
+              $filename = dirname(__FILE__) . '/output' . '.css';
               global $wp_filesystem;
               if( empty( $wp_filesystem ) ) {
                 require_once( ABSPATH .'/wp-admin/includes/file.php' );
@@ -88,13 +92,16 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
               }
 
               if( $wp_filesystem ) {
-                $wp_filesystem->put_contents(
-                    $filename,
-                    $css,
-                    FS_CHMOD_FILE // predefined mode settings for WP files
-                );
-              }
-             */
+              $res = $wp_filesystem->put_contents(
+                  $filename,
+                  $css,
+                  FS_CHMOD_FILE // predefined mode settings for WP files
+              );
+
+              // echo 'file write: ' . $res;
+          }
+
+
         }
 
         /**
@@ -189,7 +196,7 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
             $class          = $screenshot ? 'has-screenshot' : '';
 
             $customize_title = sprintf(__('Customize &#8220;%s&#8221;', 'redux-framework-demo'), $this->theme->display('Name'));
-            
+
             ?>
             <div id="current-theme" class="<?php echo esc_attr($class); ?>">
             <?php if ($screenshot) : ?>
@@ -238,7 +245,7 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
             // MA CONFIG
             require('themeworks.php');
 
-           
+
 
             if (file_exists(trailingslashit(dirname(__FILE__)) . 'README.html')) {
                 $tabs['docs'] = array(
@@ -295,31 +302,31 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
                 'page_parent_post_type' => 'your_post_type',
                 'customizer' => '1',
                 'class' => 'tw_admin_wrapper',
-                'hints' => 
+                'hints' =>
                 array(
                   'icon' => 'el-icon-question-sign',
                   'icon_position' => 'right',
                   'icon_color' => '#636363',
                   'icon_size' => 'normal',
-                  'tip_style' => 
+                  'tip_style' =>
                   array(
                     'color' => 'light',
                     'shadow' => '1',
                     'style' => 'bootstrap',
                   ),
-                  'tip_position' => 
+                  'tip_position' =>
                   array(
                     'my' => 'top left',
                     'at' => 'bottom right',
                   ),
-                  'tip_effect' => 
+                  'tip_effect' =>
                   array(
-                    'show' => 
+                    'show' =>
                     array(
                       'duration' => '500',
                       'event' => 'mouseover',
                     ),
-                    'hide' => 
+                    'hide' =>
                     array(
                       'effect' => 'fade',
                       'duration' => '500',
@@ -364,7 +371,7 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
         }
 
     }
-    
+
     global $reduxConfig;
     $reduxConfig = new admin_folder_Redux_Framework_config();
 }

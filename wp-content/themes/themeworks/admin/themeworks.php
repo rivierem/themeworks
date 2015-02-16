@@ -16,6 +16,16 @@
                 'subtitle'  => __('Upload de votre favicon', 'redux-framework-demo')
             ),
              array(
+                'id'    => 'opt-backtotop',
+                'type'    => 'switch',
+                'title'     => __('Activer le bouton "Haut de page"', 'redux-framework-demo'),
+                'compiler'  => false,
+                'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'subtitle'  => __('Activer les fonctionnalités de la <a href="https://support.google.com/analytics/answer/3450482">Publicité Display</a>', 'redux-framework-demo'),
+                'on' => 'On',
+                'off' => 'Off'
+            ),
+             array(
                 'id'    => 'opt-analytics',
                 'type'    => 'text',
                 'title'     => __('Google Analytics', 'redux-framework-demo'),
@@ -98,6 +108,40 @@
                 'compiler'  => false,
                 'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
                 'placeholder' => '<a href="#">Ma compagnie &copy; 2014 - Tous droits réservés</a>'
+            ), 
+            array(
+                'id'       => 'opt-footer_layout',
+                'type'     => 'image_select',
+                'title'    => __('Segmentation du pied de page', 'redux-framework-demo'), 
+                'subtitle' => '',
+                'options'  => array(
+                    '1'      => array(
+                        'alt'   => '1 Column', 
+                        'img'   => ReduxFramework::$_url.'assets/img/1col.png'
+                    ),
+                    '2'      => array(
+                        'alt'   => '2 Column Left', 
+                        'img'   => ReduxFramework::$_url.'assets/img/2cl.png'
+                    ),
+                    '3'      => array(
+                        'alt'   => '2 Column Right', 
+                        'img'  => ReduxFramework::$_url.'assets/img/2cr.png'
+                    ),
+                    '4'      => array(
+                        'alt'   => '3 Column Middle', 
+                        'img'   => ReduxFramework::$_url.'assets/img/3cm.png'
+                    )
+                        // ,
+                    // '5'      => array(
+                    //     'alt'   => '3 Column Left', 
+                    //     'img'   => ReduxFramework::$_url.'assets/img/3cl.png'
+                    // ),
+                    // '6'      => array(
+                    //     'alt'  => '3 Column Right', 
+                    //     'img'  => ReduxFramework::$_url.'assets/img/3cr.png'
+                    // )
+                ),
+                'default' => '2'
             )
         )
     );
@@ -370,6 +414,37 @@
             )
         )
     );
+    
+ // DIVIDE
+    $this->sections[] = array(
+        'type' => 'divide',
+    );
+
+// ACCUEIL
+$this->sections[] = array(
+    'title'     => 'Page d\'Accueil',
+    'desc'      => '',
+    'icon'      => 'el-icon-home',
+    'submenu' => true, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
+    'fields'    => array(
+         array(
+            'id'    => 'opt-slider',
+            'type'    => 'switch',
+            'title'     => __('Activer le slider sur l\'accueil', 'redux-framework-demo'),
+            'compiler'  => false,
+            'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+            'on' => 'On',
+            'off' => 'Off'
+        ),
+        array(
+            'id'       => 'opt-slider_gallery',
+            'type'     => 'gallery',
+            'title'    => 'Ajouter/Modifier les images du slider',
+            'subtitle' => 'Créer une nouvelle galerie en sélectionnant un image de la librairie ou une nouvelle en utilisant l\'upload natif de Wordpress',
+            'desc'     => 'Infos additionnelles',
+        )
+    )
+);
 
 // CONTACT
 $this->sections[] = array(
@@ -379,24 +454,86 @@ $this->sections[] = array(
     'submenu' => true, // Setting submenu to false on a given section will hide it from the WordPress sidebar menu!
     'fields'    => array(
         array(
+            'id'        => 'opt-name',
+            'type'      => 'text',
+            'title'     => 'Nom',
+            'subtitle'  => 'Votre nom complet ou nom d\'entreprise à afficher sur la page de contact',
+            'compiler'  => false,
+            'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+        ),
+        array(
             'id'        => 'opt-email',
             'type'      => 'text',
             'title'     => 'E-mail',
+            'subtitle'  => 'Votre adresse E-mail à afficher sur la page de contact',
             'compiler'  => false,
             'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
             'validate'  => 'email'
         ),
         array(
-            'id'        => 'opt-latitude',
+            'id'        => 'opt-phone',
             'type'      => 'text',
-            'title'     => 'Adresse Google Maps',
+            'title'     => 'Téléphone',
+            'subtitle'  => 'Votre numéro de téléphone à afficher sur la page de contact',
             'compiler'  => false,
-            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+            'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+            'validate'  => 'phone'
         ),
         array(
-            'id'        => 'opt-longitude',
+            'id'        => 'opt-address_map',
+            'type'      => 'textarea',
+            'title'     => 'Adresse',
+            'subtitle'  => 'Votre adresse à afficher sur la page de contact ',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+
+        ),
+        array(
+                'id'    => 'opt-map_marker',
+                'type'    => 'media',
+                'title'     => __('Upload du marqueur personnalisé', 'redux-framework-demo'),
+                'compiler'  => false,
+                'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'      => __('32 x 32 pixels - Format PNG', 'redux-framework-demo'),
+                'subtitle'  => __('Upload de votre marqueur personnalisé', 'redux-framework-demo')
+        ),
+        array(
+            'id'        => 'opt-marker_title',
             'type'      => 'text',
-            'title'     => 'Zoom - Google Maps',
+            'title'     => 'Titre - infobulle de la carte interactive',
+            'subtitle'  => 'Le titre qui apparaîtra dans la bulle lors du clique sur le marqueur',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+
+        ),
+        array(
+            'id'        => 'opt-marker_desc',
+            'type'      => 'textarea',
+            'title'     => 'Texte - infobulle de la carte interactive',
+            'subtitle'  => 'Le texte qui apparaîtra dans la bulle lors du clique sur le marqueur',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+
+        ),
+        array(
+            'id'        => 'opt-zoom_map',
+            'type'      => 'text',
+            'title'     => 'Zoom sur la carte',
+            'subtitle'  => 'Changez le niveau de zoom sur la carte',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+
+        ),
+        // array(
+        //     'id'    => 'divide-form',
+        //     'type'  => 'divide',
+        //     'desc' => '<h4>Formulaire de contact</h4>'
+        // ),
+
+        array(
+            'id'        => 'opt-contact_form',
+            'type'      => 'text',
+            'title'     => 'Shortcode fourni par Contact Form 7',
             'compiler'  => false,
             'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
         )

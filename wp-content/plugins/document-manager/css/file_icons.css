@@ -1,0 +1,83 @@
+/* CSS Document*/
+
+/* DOCUMENTATION PAGE */
+.doc_list {
+	margin-top: 30px;
+	padding: 0;
+}
+.doc_list li {
+	position: relative;
+	list-style: none;
+	/*border: 1px solid #333;*/
+	background: #f2f2f2;
+	border-radius: 10px;
+	padding: 40px 50px;
+	margin-bottom: 50px;
+	clear: both;
+}
+
+.doc_list li a.btn {
+	margin-top: 10px;
+}
+
+.doc_list h2 {
+	margin: 0;
+}
+
+
+.cats_list { padding: 0; margin: 0;}
+.cats_list li { list-style: none; display: inline; }
+
+/* ICONS */
+.rk-icon {
+	width: 98px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.rk-alignright {
+	float: right;
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+
+.rk-doc .rk-icon {
+	background: url(../img/doc.png);
+	background: url(../img/word.png);
+}
+.rk-docx .rk-icon {
+	background: url(../img/docx.png);
+	background: url(../img/word.png);
+}
+.rk-jpg .rk-icon, .rk-jpeg .rk-icon {
+	background: url(../img/jpg.png);
+}
+.rk-odt .rk-icon {
+	background: url(../img/odt.png);
+}
+.rk-pdf .rk-icon {
+	background: url(../img/pdf.png);
+}
+.rk-png .rk-icon {
+	background: url(../img/png.png);
+}
+.rk-ppt .rk-icon, .rk-pptx .rk-icon {
+	background: url(../img/ppt.png);
+	background: url(../img/powerpoint.png);
+}
+.rk-rar .rk-icon {
+	background: url(../img/rar.png);
+}
+.rk-rtf .rk-icon {
+	background: url(../img/rtf.png);
+}
+.rk-txt .rk-icon {
+	background: url(../img/txt.png);
+}
+.rk-xls .rk-icon, .rk-xlsx .rk-icon {
+	background: url(../img/xls.png);
+}
+.rk-zip .rk-icon {
+	background: url(../img/zip.png);
+}

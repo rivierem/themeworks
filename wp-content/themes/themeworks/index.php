@@ -2,8 +2,9 @@
 //Call the header
 get_header();
 ?>
-<div class="row">
+
 	<h1><?php tw_title(); ?></h1>
+	<div class="row">
 	<?php 
 	if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<article>

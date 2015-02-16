@@ -1,25 +1,52 @@
 <?php
+/*
+*   ThemeWorks functions
+*   Notes : Il faut trier le code et revoir la structure des dossiers afin que tout soit clair et facile à modifier
+*   MVC !!!
+*/
+// Options du thèmes
+    global $themeworks_config;
+
 // Initialise les options du thème
     include( dirname( __FILE__ ) . '/admin/admin-init.php' );
 
+// Initialise TGM pour charger les plugins requis
+    include( dirname( __FILE__ ) . '/inc/tgm_config.php' );
+
+// Initilise ACF pour customiser les metaboxes
+    include( dirname( __FILE__ ) . '/admin/acf/acf.php' );
+
+// Taille des images utilisées dans le thème
+    add_image_size( 'image-slider', 1160, 500 );
+
 // Ajout des fichiers CSS
+/*
+*   Ne pas oublier de faire les conditions pour charger les css et scripts selon les options du thème
+*   Avec des array's
+*/
     add_action( 'wp_enqueue_scripts', 'tw_register_css' );
     function tw_register_css() {
         if(!is_admin()){
-           
+
             wp_register_style( 'bootstrap', get_stylesheet_directory_uri().'/css/bootstrap.css' );                  //Boostrap
             wp_register_style( 'elusive-webfont', get_stylesheet_directory_uri().'/css/elusive-webfont.css', 'bootstrap' );
             wp_register_style( 'elusive-webfont-ie7', get_stylesheet_directory_uri().'/css/elusive-webfont-ie7.css', 'bootstrap' );
             wp_register_style( 'themeworks', get_stylesheet_directory_uri().'/css/themeworks.css', 'bootstrap' );   //Style de base
             wp_register_style( 'output', get_stylesheet_directory_uri().'/admin/output.css', 'themeworks' );        //Output css theme
-            if (is_front_page()) {
 
+            // wp_register_style( 'mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css', 'themeworks' );        //Mapbox
+
+            wp_register_style( 'scrolltotop', get_stylesheet_directory_uri().'/css/scrollToTop.css', 'themeworks' );
+            wp_register_style( 'easingscroll', get_stylesheet_directory_uri().'/css/easing.css', 'themeworks' );
+
+            if (is_front_page()) {
+                wp_register_style( 'bxslider', get_stylesheet_directory_uri().'/css/jquery.bxslider.css', 'themeworks' );
             }
             if (is_page('page-id')) {
 
             }
-            wp_enqueue_style( 
-                array('bootstrap', 'elusive-webfont', 'elusive-webfont-ie7', 'themeworks', 'output')
+            wp_enqueue_style(
+                array('bootstrap', 'elusive-webfont', 'elusive-webfont-ie7', 'themeworks', 'output', 'scrolltotop', 'easingscroll', 'bxslider', 'gmap')
             );
         }
     }
@@ -28,16 +55,17 @@
     add_action( 'wp_enqueue_scripts', 'tw_register_scripts' );
     function tw_register_scripts() {
         if(!is_admin()){
-           
-            wp_register_script( 'autocompletion', get_stylesheet_directory_uri().'/js/autocompletion.js' );                  //Autocompletion
+            wp_register_script( 'scrolltotop', get_stylesheet_directory_uri().'/js/jquery-scrollToTop.min.js' );
+            wp_register_script( 'bootstrap', get_stylesheet_directory_uri().'/js/bootstrap.js' );
+
+            // wp_register_script( 'mapbox', 'https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.js' );
+            wp_register_script( 'gmap', 'http://maps.google.com/maps/api/js?sensor=false' );
+
             if (is_front_page()) {
-
+                 wp_register_script( 'bxslider', get_stylesheet_directory_uri().'/js/jquery.bxslider.min.js' );
             }
-            if (is_page('page-id')) {
-
-            }
-            wp_enqueue_script( 
-                array('autocompletion')
+            wp_enqueue_script(
+                array('jquery', 'bootstrap', 'scrolltotop', 'bxslider', 'gmap')
             );
         }
     }
@@ -90,10 +118,10 @@
          global $typenow;
         //Pour un custom post type spécifique décommenter la condition
         // if( $typenow == 'equipe' || get_post_type($_REQUEST['post_id']) == 'equipe' ) {
-         	$translated = str_ireplace("Utiliser comme image à la une",  "Utiliser comme une photo",  $translated );
-         	$translated = str_ireplace("Mettre une image à la une",  "Ajouter une photo",  $translated );
-         	$translated = str_ireplace("Supprimer l’image à la une",  "Supprimer la photo",  $translated );
-         	$translated = str_ireplace("Image à la Une",  "Photo",  $translated );
+         	$translated = str_ireplace("Utiliser comme image à la une",  "Utiliser comme image",  $translated );
+         	$translated = str_ireplace("Mettre une image à la une",  "Ajouter une image",  $translated );
+         	$translated = str_ireplace("Supprimer l’image à la une",  "Supprimer la image",  $translated );
+         	$translated = str_ireplace("Image à la Une",  "Image",  $translated );
         // }
          return $translated;
     }
@@ -150,14 +178,14 @@
 //Remove meta tag generator in Header
     remove_action('wp_head', 'wp_generator');
 
-// Gestion des titres
+// Gestion des tits
 function tw_title(){
     if(is_front_page()){
         echo 'Accueil - ';
     } elseif(function_exists('is_tag') && is_tag()) {
         echo 'Archive de tag : &quot;'.$tag.'&quot; - ';
     } elseif (is_archive()) {
-        wp_title(''); echo ' Archive - ';
+        echo 'Catégorie : '; single_cat_title( '', true ); echo ' - ';
     } elseif (is_search()) {
         echo 'Recherche pour : &quot;'.esc_html($_GET['s']).'&quot; - ';
     } elseif (!(is_404()) && (is_single()) || (is_page())) {
@@ -166,7 +194,128 @@ function tw_title(){
         echo 'Page non trouvée - ';
     } elseif(is_home()){
         echo 'Blog - ';
+    } elseif(is_tax()){
+        single_cat_title( '', true ); echo ' - ';
     }
     bloginfo('name');
 }
+
+// Module Carousel
+function tw_blog_carousel(){
+   get_template_part( 'modules/carousel','blog');
+}
+
+// Module Formulaire de contact
+function tw_get_display_cf7(){
+    get_template_part( 'modules/contact','form');
+}
+
+// Module Adresse
+function tw_get_display_address(){
+    get_template_part( 'modules/address');
+}
+
+// Module Google Maps
+function tw_get_display_gmap(){
+    get_template_part( 'modules/gmap');
+}
+
+
+// WIDGETS
+
+function tw_init_widgets() {
+
+    // register_sidebars( 5,
+    //     array(
+    //         'name' => 'Footer %d',
+    //         'id' => 'footer_%d_col',
+    //         'before_widget' => '<div>',
+    //         'after_widget' => '</div>',
+    //         'before_title' => '<h2 class="rounded">',
+    //         'after_title' => '</h2>'
+    //     )
+    // );
+    register_sidebar(
+        array(
+        'name' => 'Footer Widget 1',
+        'id' => 'sidebar-1',
+        'description' => 'Colonne 1 - widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Footer Widget 2',
+        'id' => 'sidebar-2',
+        'description' => 'Colonne 2 - widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Footer Widget 3',
+        'id' => 'sidebar-3',
+        'description' => 'Colonne 3 - widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Footer Widget 4',
+        'id' => 'sidebar-4',
+        'description' => 'Colonne 4 - widget area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+        )
+    );
+
+}
+add_action( 'widgets_init', 'tw_init_widgets' );
+
+
+
+add_filter('acf/settings/path', 'my_acf_settings_path');
+ 
+function my_acf_settings_path( $path ) {
+ 
+    // update path
+    $path = get_stylesheet_directory() . 'admin/acf/';
+    
+    
+    // return
+    return $path;
+    
+}
+ 
+ 
+add_filter('acf/settings/dir', 'my_acf_settings_dir');
+ 
+function my_acf_settings_dir( $dir ) {
+ 
+    // update path
+    $dir = get_stylesheet_directory_uri() . 'admin/acf/';
+    
+    
+    // return
+    return $dir;
+    
+}
+ 
+ 
+add_filter('acf/settings/show_admin', '__return_false');
+
+
+
+
 ?>

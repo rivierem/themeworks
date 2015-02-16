@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<!-- <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title> -->
 	<title><?php tw_title(); ?></title>
 	<?php global $themeworks_config; ?>
 
@@ -11,6 +10,27 @@
 	<!-- Touch icon-->
 	<link rel="apple-touch-icon" href="<?php echo $themeworks_config['opt-favicon']['url']; ?>">
 	<?php wp_head(); ?>
+
+	<script>
+		jQuery(document).ready(function($) {
+			//Carousel
+			// 	$('.carousel').carousel();
+
+			//Back to Top
+			<?php if($themeworks_config['opt-backtotop']){ ?>
+			$('body').scrollToTop({
+				text: 'Haut de la page',
+				skin: 'default'
+			}); //Skin : default, cycle, square, text or triangle
+			<?php } ?>
+			<?php if($themeworks_config['opt-slider']){ ?>
+			//Slider
+			 $('.bxslider').bxSlider();
+			 <?php } ?>
+
+			 $('.mc4wp-form').addClass('form-inline');
+		});
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -42,7 +62,21 @@
 		
 			<?php if($themeworks_config['opt-breadcrumb']){ ?>
 			<div class="col-lg-12">
-				<?php get_template_part( 'module', 'breadcrumb' ) ?>
+				<!-- <?php get_template_part( 'modules/module', 'breadcrumb' ) ?> -->
+				<?php bcn_display(); ?>
 			</div>
+
 			<?php } ?>
+
+
+
+			<?php 
+			// Zone test/
+
+			// echo '<pre>';
+			// print_r($wp);
+			// echo '</pre>';
+
+
+			 ?>
 		</header>

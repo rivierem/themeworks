@@ -18,6 +18,8 @@ function getMapInfos(){
 	$tw_marker_title = $themeworks_config['opt-marker_title'];
 	$tw_marker_desc = $themeworks_config['opt-marker_desc'];
 	$tw_zoom_map = $themeworks_config['opt-zoom_map'];
+	$tw_width_map = $themeworks_config['opt-map_width'];
+	$tw_height_map = $themeworks_config['opt-map_height'];
 
 	$mapinfos = array();
 
@@ -33,6 +35,16 @@ function getMapInfos(){
 	if (!empty($tw_zoom_map)) {
 		$mapinfos['zoom'] = $tw_zoom_map;
 	}
+	if (!empty($tw_width_map)) {
+		$mapinfos['width'] = $tw_width_map;
+	} else {
+		$mapinfos['width'] = '100%';
+	}
+	if (!empty($tw_height_map)) {
+		$mapinfos['height'] = $tw_height_map;
+	} else {
+		$mapinfos['height'] = '400px';
+	}
 	return $mapinfos;
 }
 
@@ -41,7 +53,7 @@ $tw_mapinfos = getMapInfos();
 $tw_zoom_map = 13;
 
 ?>
-<div id="tw_map" style="width:100%; height:400px;"></div>
+<div id="tw_map" style="width:<?php echo $tw_mapinfos['width']; ?>; height:<?php echo $tw_mapinfos['height']; ?>;"></div>
 <script>
 function initialize() {
 	// Google
@@ -60,10 +72,10 @@ function initialize() {
 	    <?php } ?>
 	});
 	<?php if (!empty($tw_mapinfos['title']) && !empty($tw_mapinfos['desc'])) { ?>
-	var contentString = '<h1><?php echo $tw_mapinfos["title"]; ?></h1>' +
-		'<div class="map_content">' +
-		'<?php echo $tw_mapinfos["desc"] ?>' +
-		'</div>';
+	var contentString = "<h1><?php echo $tw_mapinfos["title"]; ?></h1>" +
+		"<div class='map_content'>" +
+		"<?php echo $tw_mapinfos['desc'] ?>" +
+		"</div>";
 
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString

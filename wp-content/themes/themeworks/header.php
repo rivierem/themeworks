@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 	<meta charset="UTF-8" />
 	<title><?php tw_title(); ?></title>
@@ -23,7 +23,8 @@
 				skin: 'default'
 			}); //Skin : default, cycle, square, text or triangle
 			<?php } ?>
-			<?php if($themeworks_config['opt-slider']){ ?>
+
+			<?php if($themeworks_config['opt-slider'] && is_front_page()){ ?>
 			//Slider
 			 $('.bxslider').bxSlider();
 			 <?php } ?>

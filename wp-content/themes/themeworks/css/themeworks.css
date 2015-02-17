@@ -24,8 +24,6 @@ a:hover { text-decoration: none;}
 #main_nav ul li {
 	display: inline-block;
 	padding: 10px 20px;
-	/*border-bottom: 4px solid #91CD53;*/
-	/*border-left: 2px solid #91CD53;*/
 }
 
 #main_nav ul li:hover {
@@ -48,9 +46,10 @@ a:hover { text-decoration: none;}
 
 footer {
 	margin-top: 100px;
-	/*background: #B7D597;*/
 }
 
+
+/* Media sociaux */
 .social_medias_list { float: right;}
 .social_medias_list a { font-size: 40px;}
 
@@ -87,8 +86,15 @@ footer {
 	border-radius: 0 4px 4px 0;
 
 }
+/* Blog */
+article p {
+	text-align: justify;
+	line-height: 140%;
+}
+.blog_img_wrapper { height: 400px; overflow: hidden;}
+.blog_img_wrapper img { width: 100%; height: auto;}
 
-/* */
+/* Image */
 .content_wrapper img { border: 1px solid #e7e7e7; padding: 4px;}
 
 /* Alignement WP */

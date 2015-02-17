@@ -49,9 +49,9 @@ function rk_deactivate_plugin() {
 register_deactivation_hook( __FILE__, 'rk_deactivate_plugin' );
 
 //Template Document
-add_action("template_redirect", 'my_theme_redirect');
+add_action("template_redirect", 'doc_theme_redirect');
 
-function my_theme_redirect() {
+function doc_theme_redirect() {
     global $wp;
     $plugindir = dirname( __FILE__ );
     //A Simple Page

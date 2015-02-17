@@ -27,13 +27,12 @@ get_header();
 	<!-- Zone de test accueil -->
 	<div class="row">
 		<h1><?php tw_title(); ?></h1>
+		<div class="col-lg-8">
+			<?php tw_get_news_module(); ?>
+		</div>
 		<div class="col-lg-4">
 			<h3>Newsletter</h3>
 			<?php echo do_shortcode( '[mc4wp_form]' ); ?>
-		</div>
-		<div class="col-lg-8">
-			<h3>Colonne 2</h3>
-
 		</div>
 	</div>
 	<!-- END Zone de test accueil -->

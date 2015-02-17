@@ -2,9 +2,9 @@
 			<footer>
 				<div class="row">
 					<p class="lead intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa totam sapiente laboriosam magni, obcaecati, iusto quidem. Aspernatur quae laboriosam, minus fuga mollitia maxime nihil quisquam quaerat, unde officiis nemo consectetur?</p>
-					<?php $layout = $themeworks_config['opt-footer_layout']; ?>
+					<?php $footer_layout = $themeworks_config['opt-footer_layout']; ?>
 					<?php
-						switch ($layout) {
+						switch ($footer_layout) {
 							case '1':
 								echo '<div class="col-lg-12">';
 									dynamic_sidebar(1);
@@ -51,7 +51,10 @@
 						<p id="copyright"><?php echo $themeworks_config['opt-copyright']; ?></p>
 					</div>
 					<div class="col-lg-6">
-					<?php get_template_part('social','menu'); ?>
+					<?php if($themeworks_config['opt-footer_social_menu']) {
+						get_template_part('social','menu');
+					}
+					?>
 					</div>
 				</div>
 			</footer>

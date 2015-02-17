@@ -131,7 +131,7 @@
         global $wp_meta_boxes;
 
         // Tableau de bord général
-        //unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']); // Presse-Minute
+        unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']); // Presse-Minute
         unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']); // Commentaires récents
         unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
         unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']); // Extensions
@@ -139,8 +139,33 @@
         unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']); // Billets en brouillon
         unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']); // Blogs WordPress
         unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']); // Autres actualités WordPress
+        unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']); // Activités
+        unset($wp_meta_boxes['dashboard']['normal']['core']['wp_welcome_panel']); // Autres actualités WordPress
+        remove_action( 'welcome_panel', 'wp_welcome_panel' );
     }
     add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+
+
+// Ajoute un dashboard widget
+function example_add_dashboard_widgets() {
+
+    wp_add_dashboard_widget(
+                 'tw-welcome-panel',         // Widget slug.
+                 'Bienvenue',         // Title.
+                 'example_dashboard_widget_function' // Display function.
+        );
+}
+add_action( 'wp_dashboard_setup', 'example_add_dashboard_widgets' );
+
+function example_dashboard_widget_function() {
+    global $current_user;
+    get_currentuserinfo();
+
+    // Display whatever it is you want to show.
+    echo "Bienvenue sur votre site Internet <strong>". $current_user->display_name ."</strong> ! <br /><br />";
+
+    echo 'VIDÉO DE BIENVENUE POUR EXPLIQUER AU CLIENT SON INTERFACE';
+}
 
 //Custom fields dans les profils WP
     function custom_contact_info($contactmethods) {
@@ -178,7 +203,7 @@
 //Remove meta tag generator in Header
     remove_action('wp_head', 'wp_generator');
 
-// Gestion des tits
+// Gestion des titres
 function tw_title(){
     if(is_front_page()){
         echo 'Accueil - ';
@@ -218,6 +243,10 @@ function tw_get_display_address(){
 // Module Google Maps
 function tw_get_display_gmap(){
     get_template_part( 'modules/gmap');
+}
+
+function tw_get_news_module(){
+    get_template_part( 'modules/module', 'news');
 }
 
 
@@ -286,33 +315,22 @@ add_action( 'widgets_init', 'tw_init_widgets' );
 
 
 add_filter('acf/settings/path', 'my_acf_settings_path');
- 
 function my_acf_settings_path( $path ) {
- 
     // update path
     $path = get_stylesheet_directory() . 'admin/acf/';
-    
-    
+
     // return
     return $path;
-    
 }
- 
- 
+
 add_filter('acf/settings/dir', 'my_acf_settings_dir');
- 
 function my_acf_settings_dir( $dir ) {
- 
     // update path
     $dir = get_stylesheet_directory_uri() . 'admin/acf/';
-    
-    
+
     // return
     return $dir;
-    
 }
- 
- 
 add_filter('acf/settings/show_admin', '__return_false');
 
 

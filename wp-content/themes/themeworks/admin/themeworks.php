@@ -21,7 +21,7 @@
                 'title'     => __('Activer le bouton "Haut de page"', 'redux-framework-demo'),
                 'compiler'  => false,
                 'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                'subtitle'  => __('Activer les fonctionnalités de la <a href="https://support.google.com/analytics/answer/3450482">Publicité Display</a>', 'redux-framework-demo'),
+                'subtitle'  => __('Affiche un bouton de retour vers le haut de la page dans le bas du navigateur.', 'redux-framework-demo'),
                 'on' => 'On',
                 'off' => 'Off'
             ),
@@ -131,17 +131,18 @@
                         'alt'   => '3 Column Middle', 
                         'img'   => ReduxFramework::$_url.'assets/img/3cm.png'
                     )
-                        // ,
-                    // '5'      => array(
-                    //     'alt'   => '3 Column Left', 
-                    //     'img'   => ReduxFramework::$_url.'assets/img/3cl.png'
-                    // ),
-                    // '6'      => array(
-                    //     'alt'  => '3 Column Right', 
-                    //     'img'  => ReduxFramework::$_url.'assets/img/3cr.png'
-                    // )
                 ),
                 'default' => '2'
+            ),
+            array(
+                'id'    => 'opt-footer_social_menu',
+                'type'    => 'switch',
+                'title'     => __('Activer le menu social dans le pied de page', 'redux-framework-demo'),
+                'compiler'  => false,
+                'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'subtitle'  => '',
+                'on' => 'On',
+                'off' => 'Off'
             )
         )
     );
@@ -524,12 +525,24 @@ $this->sections[] = array(
             'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
 
         ),
-        // array(
-        //     'id'    => 'divide-form',
-        //     'type'  => 'divide',
-        //     'desc' => '<h4>Formulaire de contact</h4>'
-        // ),
+        array(
+            'id'        => 'opt-map_width',
+            'type'      => 'text',
+            'title'     => 'Largeur de la carte',
+            'subtitle'  => 'Entrez une valeur en pourcentage (%) ou en pixels (px)',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
 
+        ),
+        array(
+            'id'        => 'opt-map_height',
+            'type'      => 'text',
+            'title'     => 'Hauteur de la carte',
+            'subtitle'  => 'Entrez une valeur en pourcentage (%) ou en pixels (px)',
+            'compiler'  => false,
+            'mode'      => false // Can be set to false to allow any media type, or can also be set to any mime type.
+
+        ),
         array(
             'id'        => 'opt-contact_form',
             'type'      => 'text',

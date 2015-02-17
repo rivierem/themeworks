@@ -39,7 +39,7 @@ function register_cpt_question() {
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 20,
-        
+        'menu_icon' => 'dashicons-editor-help',
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,
@@ -277,7 +277,14 @@ function register_faq_styles() {
 			false
 		);
 
-		wp_enqueue_script( array( 'jquery', 'jquery-mobile-custom', 'main', 'modernizr'));
+		wp_enqueue_script( 
+            array( 
+                'jquery', 
+                //'jquery-mobile-custom',
+                'main',
+                'modernizr'
+            )
+        );
 	}
 
 	add_action('wp_enqueue_scripts', 'register_faq_scripts' );
